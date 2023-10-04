@@ -1,2 +1,2 @@
 # Searcher
-Search and change bio in file
+Search and change bio in file.
