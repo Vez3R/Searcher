@@ -21,18 +21,6 @@ namespace WinFormsApp2
         string box;
         int cou;
         bool full;
-        public Form2()
-        {
-
-            string path = "base.txt";
-            string[] f2 = File.ReadAllLines(path);
-            People file1 = new People(f2);
-            Filter.search_list(file1.Peo);
-            InitializeComponent();
-            this.Size = new System.Drawing.Size(459, 96);
-            this.MaximumSize = new System.Drawing.Size(459, 96);
-            this.MinimumSize = new System.Drawing.Size(459, 96);
-        }
         public Form2(Form1 owner)
         {
             string path = "base.txt";

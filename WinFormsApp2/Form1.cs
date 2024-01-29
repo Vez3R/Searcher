@@ -10,7 +10,10 @@ namespace WinFormsApp2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (!File.Exists("base.txt"))
+            { File.Create("base.txt").Close(); }
+            if (!File.Exists("filter.json"))
+            { File.Create("filter.json").Close(); }
         }
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
